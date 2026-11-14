@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.0.0/schema.json",
+  "name": "da2fbd14e5f65183ad61",
+  "displayName": "3. Sân bay: quy mô và rủi ro",
+  "displayOption": "FitToPage",
+  "width": 1280,
+  "height": 800,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filter031f016f2680402faaefa058",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FactFlight"
+              }
+            },
+            "Property": "GEO_ELIGIBLE"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "3",
+              "Entity": "FactFlight",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "3"
+                          }
+                        },
+                        "Property": "GEO_ELIGIBLE"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "1L"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  }
+}

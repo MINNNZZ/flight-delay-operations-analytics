@@ -1,0 +1,20 @@
+{
+  "month_positive_evening_gap": 12,
+  "month_total": 12,
+  "airline_positive_evening_gap": 14,
+  "airline_total": 14,
+  "NK_matched": {
+    "strata": 2879,
+    "carrier_n": 81016,
+    "other_n": 296019,
+    "severe_gap": 0.054672985132353066,
+    "mean_gap": 11.91672776659903
+  },
+  "MQ_matched": {
+    "strata": 2875,
+    "carrier_n": 110498,
+    "other_n": 125398,
+    "severe_gap": 0.0017440383258298415,
+    "mean_gap": -2.16160421866837
+  }
+}

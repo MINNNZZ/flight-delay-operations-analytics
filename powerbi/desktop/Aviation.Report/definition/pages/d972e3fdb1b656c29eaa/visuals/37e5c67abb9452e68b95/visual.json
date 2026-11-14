@@ -1,0 +1,204 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "37e5c67abb9452e68b95",
+  "position": {
+    "x": 24,
+    "y": 105,
+    "z": 7100,
+    "height": 420,
+    "width": 1232
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Actions"
+                    }
+                  },
+                  "Property": "Ưu tiên"
+                }
+              },
+              "queryRef": "Actions.Ưu tiên",
+              "nativeQueryRef": "Ưu tiên",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Actions"
+                    }
+                  },
+                  "Property": "Hành động"
+                }
+              },
+              "queryRef": "Actions.Hành động",
+              "nativeQueryRef": "Hành động",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Actions"
+                    }
+                  },
+                  "Property": "Phụ trách đề xuất"
+                }
+              },
+              "queryRef": "Actions.Phụ trách đề xuất",
+              "nativeQueryRef": "Phụ trách đề xuất",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Actions"
+                    }
+                  },
+                  "Property": "Bằng chứng"
+                }
+              },
+              "queryRef": "Actions.Bằng chứng",
+              "nativeQueryRef": "Bằng chứng",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Actions"
+                    }
+                  },
+                  "Property": "Đo thành công"
+                }
+              },
+              "queryRef": "Actions.Đo thành công",
+              "nativeQueryRef": "Đo thành công",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Actions"
+                    }
+                  },
+                  "Property": "Trạng thái"
+                }
+              },
+              "queryRef": "Actions.Trạng thái",
+              "nativeQueryRef": "Trạng thái",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ưu tiên dựa trên bằng chứng — trạng thái: đề xuất'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#182B43'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

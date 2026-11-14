@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "population_rows": 5819079,
+  "paired_days": 365,
+  "bootstrap_scope": "Historical within-2015 stability, not count uncertainty, future forecast or causal effect. Month-stratified circular blocks assume local dependence within each month; wrap-around and block choice are approximations.",
+  "baseline_time_contrasts": {
+    "mean_arrival_gap_minutes": 9.266431158840644,
+    "severe_rate_gap_pp": 4.876149782945947,
+    "severe_risk_ratio": 2.350553578451089,
+    "disruption_rate_gap_pp": 5.245377848816547
+  },
+  "bootstrap": [
+    {
+      "metric": "mean_arrival_gap_minutes",
+      "block_days": 1,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 9.266431158840644,
+      "percentile_2_5": 8.563627280785667,
+      "percentile_97_5": 10.0240298401968
+    },
+    {
+      "metric": "severe_rate_gap_pp",
+      "block_days": 1,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 4.876149782945947,
+      "percentile_2_5": 4.459588782080852,
+      "percentile_97_5": 5.327946256061771
+    },
+    {
+      "metric": "severe_risk_ratio",
+      "block_days": 1,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 2.350553578451089,
+      "percentile_2_5": 2.2355728395420718,
+      "percentile_97_5": 2.4721376424035895
+    },
+    {
+      "metric": "disruption_rate_gap_pp",
+      "block_days": 1,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 5.245377848816547,
+      "percentile_2_5": 4.733769375858267,
+      "percentile_97_5": 5.784031953559064
+    },
+    {
+      "metric": "mean_arrival_gap_minutes",
+      "block_days": 7,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 9.266431158840644,
+      "percentile_2_5": 8.40711139209664,
+      "percentile_97_5": 10.131581868842861
+    },
+    {
+      "metric": "severe_rate_gap_pp",
+      "block_days": 7,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 4.876149782945947,
+      "percentile_2_5": 4.370210662507401,
+      "percentile_97_5": 5.404638283700311
+    },
+    {
+      "metric": "severe_risk_ratio",
+      "block_days": 7,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 2.350553578451089,
+      "percentile_2_5": 2.2366468206015826,
+      "percentile_97_5": 2.4613195119009847
+    },
+    {
+      "metric": "disruption_rate_gap_pp",
+      "block_days": 7,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 5.245377848816547,
+      "percentile_2_5": 4.653531255995886,
+      "percentile_97_5": 5.86589134515263
+    },
+    {
+      "metric": "mean_arrival_gap_minutes",
+      "block_days": 14,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 9.266431158840644,
+      "percentile_2_5": 8.462042880778686,
+      "percentile_97_5": 10.088041359918073
+    },
+    {
+      "metric": "severe_rate_gap_pp",
+      "block_days": 14,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 4.876149782945947,
+      "percentile_2_5": 4.393665791329562,
+      "percentile_97_5": 5.387807071198747
+    },
+    {
+      "metric": "severe_risk_ratio",
+      "block_days": 14,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 2.350553578451089,
+      "percentile_2_5": 2.2537396969858503,
+      "percentile_97_5": 2.443690766956118
+    },
+    {
+      "metric": "disruption_rate_gap_pp",
+      "block_days": 14,
+      "repetitions": 3000,
+      "seed": 20261112,
+      "estimate": 5.245377848816547,
+      "percentile_2_5": 4.697054767133797,
+      "percentile_97_5": 5.825910560889589
+    }
+  ],
+  "carrier_comparisons": [
+    {
+      "carrier": "NK",
+      "time_definition": "BAND",
+      "min_arrivals_each_group": 10,
+      "strata": 2879,
+      "geographic_carrier_n": 105059,
+      "geographic_other_n": 5126071,
+      "retained_carrier_n": 81016,
+      "retained_other_n": 296019,
+      "carrier_common_support_share": 0.7711476408494274,
+      "other_common_support_share": 0.05774773700949519,
+      "geographic_raw_severe_gap_pp": 5.257039377037236,
+      "geographic_raw_mean_gap_minutes": 10.53649210916043,
+      "retained_raw_severe_gap_pp": 5.358894465637479,
+      "retained_raw_mean_gap_minutes": 11.477053285811117,
+      "standardized_severe_gap_pp": 5.467298513235306,
+      "standardized_mean_gap_minutes": 11.91672776659903
+    },
+    {
+      "carrier": "NK",
+      "time_definition": "BAND",
+      "min_arrivals_each_group": 30,
+      "strata": 1505,
+      "geographic_carrier_n": 105059,
+      "geographic_other_n": 5126071,
+      "retained_carrier_n": 48758,
+      "retained_other_n": 170415,
+      "carrier_common_support_share": 0.4641011241302506,
+      "other_common_support_share": 0.0332447599730866,
+      "geographic_raw_severe_gap_pp": 5.257039377037236,
+      "geographic_raw_mean_gap_minutes": 10.53649210916043,
+      "retained_raw_severe_gap_pp": 4.490842556386983,
+      "retained_raw_mean_gap_minutes": 10.1342103164918,
+      "standardized_severe_gap_pp": 4.6134479688662,
+      "standardized_mean_gap_minutes": 10.663377373876362
+    },
+    {
+      "carrier": "NK",
+      "time_definition": "HOUR",
+      "min_arrivals_each_group": 10,
+      "strata": 1735,
+      "geographic_carrier_n": 105059,
+      "geographic_other_n": 5126071,
+      "retained_carrier_n": 44403,
+      "retained_other_n": 56906,
+      "carrier_common_support_share": 0.4226482262347824,
+      "other_common_support_share": 0.011101289857280556,
+      "geographic_raw_severe_gap_pp": 5.257039377037236,
+      "geographic_raw_mean_gap_minutes": 10.53649210916043,
+      "retained_raw_severe_gap_pp": 5.444820441654469,
+      "retained_raw_mean_gap_minutes": 11.972244398847696,
+      "standardized_severe_gap_pp": 5.499164402778642,
+      "standardized_mean_gap_minutes": 12.18032493240397
+    },
+    {
+      "carrier": "MQ",
+      "time_definition": "BAND",
+      "min_arrivals_each_group": 10,
+      "strata": 2875,
+      "geographic_carrier_n": 257130,
+      "geographic_other_n": 4974000,
+      "retained_carrier_n": 110498,
+      "retained_other_n": 125398,
+      "carrier_common_support_share": 0.4297359312410065,
+      "other_common_support_share": 0.02521069561720949,
+      "geographic_raw_severe_gap_pp": 1.9391186778880563,
+      "geographic_raw_mean_gap_minutes": 2.556288562571809,
+      "retained_raw_severe_gap_pp": 0.11907201409426249,
+      "retained_raw_mean_gap_minutes": -1.9352011043134514,
+      "standardized_severe_gap_pp": 0.17440383258298414,
+      "standardized_mean_gap_minutes": -2.16160421866837
+    },
+    {
+      "carrier": "MQ",
+      "time_definition": "BAND",
+      "min_arrivals_each_group": 30,
+      "strata": 913,
+      "geographic_carrier_n": 257130,
+      "geographic_other_n": 4974000,
+      "retained_carrier_n": 48369,
+      "retained_other_n": 54282,
+      "carrier_common_support_share": 0.18811107222027768,
+      "other_common_support_share": 0.010913148371531966,
+      "geographic_raw_severe_gap_pp": 1.9391186778880563,
+      "geographic_raw_mean_gap_minutes": 2.556288562571809,
+      "retained_raw_severe_gap_pp": 0.380362549613672,
+      "retained_raw_mean_gap_minutes": -1.3680831415592598,
+      "standardized_severe_gap_pp": 0.08780221474867944,
+      "standardized_mean_gap_minutes": -2.2131057856636165
+    },
+    {
+      "carrier": "MQ",
+      "time_definition": "HOUR",
+      "min_arrivals_each_group": 10,
+      "strata": 1162,
+      "geographic_carrier_n": 257130,
+      "geographic_other_n": 4974000,
+      "retained_carrier_n": 28526,
+      "retained_other_n": 28561,
+      "carrier_common_support_share": 0.11093999144401664,
+      "other_common_support_share": 0.00574205870526739,
+      "geographic_raw_severe_gap_pp": 1.9391186778880563,
+      "geographic_raw_mean_gap_minutes": 2.556288562571809,
+      "retained_raw_severe_gap_pp": 1.2294851850049582,
+      "retained_raw_mean_gap_minutes": 0.1236713520956787,
+      "standardized_severe_gap_pp": 1.2343211998044468,
+      "standardized_mean_gap_minutes": 0.11659246729595159
+    }
+  ],
+  "previous_matched_results_reproduced": true,
+  "source_sha256": {
+    "flights.csv": "afa4e42188b113dd69427a3fbd00a4b6979c6235c866f963c2899d18a3403a83",
+    "airports.csv": "23c4cea98c318225bd923b2068ead8af089845071f79fd9ea0037ba6a61cd4e2",
+    "airlines.csv": "ec54f453260c2a46fc76d497ab0eb0a4c13724b566fba8a7ce3bb8ad712acca3"
+  }
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "[Total Flights]": 5819079,
+    "[Completed Flights]": 5714008,
+    "[Severe Flights]": 325591,
+    "[Cancelled Flights]": 89884,
+    "[Diverted Flights]": 15187,
+    "[Disrupted Flights]": 430662,
+    "[On-Time Flights]": 4650569,
+    "[Severe Delay Rate]": 0.0569811942860423,
+    "[Cancellation Rate]": 0.015446430612129514,
+    "[On-Time Scheduled Rate]": 0.7991933087693087,
+    "[Average Arrival Delay]": 4.407057357987598,
+    "[Median Arrival Delay]": -5,
+    "[P95 Arrival Delay]": 66,
+    "[Positive Arrival Minutes]": 69103367,
+    "[Reported Cause Minutes]": 62651867,
+    "[Geographically Resolved Flights]": 5332914,
+    "[October Flights]": 486165,
+    "[October Resolved Flights]": null,
+    "[Airline Dimension Rows]": 14,
+    "[Airport Dimension Rows]": 323,
+    "[Date Dimension Rows]": 365
+  }
+]

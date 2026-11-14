@@ -1,0 +1,6 @@
+Ưu tiên,Hành động,Phụ trách đề xuất,Bằng chứng,Đo thành công,Trạng thái
+1. Cao,Cập nhật dữ liệu và nối mã sân bay tháng 10,Data owner,Dữ liệu 2015; 486.165 chuyến chưa nối mã,Coverage và chất lượng trước refresh,Đề xuất
+2. Cao,Kiểm tra rotation và phục hồi 17–21h tại ORD/LGA,Điều hành,"Buổi tối severe 8,49% so với 3,61% sáng","Severe, disruption, p95; không tăng hủy",Đề xuất
+3. Cao,Tách chương trình giảm hủy và giảm chậm nặng,Điều hành / phục hồi,"Tháng 2 hủy 4,78%; tháng 6 severe 8,15%",Cancellation và disruption đồng thời,Đề xuất
+4. Vừa,Điều tra tuyến NK và hủy chuyến MQ,Quản lý hiệu suất,"NK matched +5,47 điểm % severe",Matched risk và cancellation theo cơ cấu,Đề xuất
+5. Vừa,"Theo dõi mean, median và phần đuôi cùng lúc",BI / phân tích,"Mean 4,41 phút nhưng p95 66 phút","Rate, count, coverage và p95",Đề xuất

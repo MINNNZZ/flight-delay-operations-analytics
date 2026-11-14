@@ -1,0 +1,25 @@
+{
+  "quality_status": "READY_WITH_WARNINGS",
+  "source_sha256": {
+    "flights.csv": "afa4e42188b113dd69427a3fbd00a4b6979c6235c866f963c2899d18a3403a83",
+    "airports.csv": "23c4cea98c318225bd923b2068ead8af089845071f79fd9ea0037ba6a61cd4e2",
+    "airlines.csv": "ec54f453260c2a46fc76d497ab0eb0a4c13724b566fba8a7ce3bb8ad712acca3"
+  },
+  "critical_issues_for_system_analysis": [],
+  "scope": {
+    "system_airline_time": "READY_WITH_WARNINGS: all 12 months",
+    "airport_route": "READY_WITH_WARNINGS: 11 resolved months only",
+    "full_year_named_airport_route": "NOT_READY: missing verified airport ID crosswalk",
+    "utc_aircraft_rotation": "NOT_READY: no airport timezone / actual date offsets",
+    "current_2026_operations": "NOT_READY: historical 2015 data"
+  },
+  "warnings": [
+    "486165 October flights have unresolved numeric airport codes; retain in global analysis, exclude from named geography analysis.",
+    "2 temporal inconsistencies flagged, not guessed or overwritten.",
+    "Outcome-dependent cause missingness; never replace missing causes with zero in source data.",
+    "No passenger, cost, weather observation, crew, timezone or aircraft type tables."
+  ],
+  "missing_arrival_rate": 0.018056293788071963,
+  "arrival_completeness_completed": 1.0,
+  "duplicates": 0
+}

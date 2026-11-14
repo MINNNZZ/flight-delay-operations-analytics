@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_and_AGENTS_unchanged": true,
+  "installed_skill_matches_workspace": true,
+  "skill_files_checked": 6,
+  "source_freshness_gate": "READY_WITH_WARNINGS",
+  "original_matched_results_reproduced": true,
+  "new_result_tables_checked": true,
+  "local_links_checked": 31,
+  "unit_tests_passed": 10,
+  "skill_validators_passed": 2,
+  "powerbi_refreshed_this_review": false,
+  "environment": {
+    "python": "3.13.7",
+    "numpy": "2.3.3",
+    "pandas": "2.3.3"
+  }
+}

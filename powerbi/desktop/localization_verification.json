@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "model_unchanged": true,
+  "desktop_validation_pending": false,
+  "reports": [
+    {
+      "language": "vi",
+      "file": "Aviation_Insights_vi.pbix",
+      "pages": [
+        "1. Tổng quan vận hành",
+        "2. Hiệu suất hãng",
+        "3. Sân bay: quy mô và rủi ro",
+        "4. Tuyến bay: chọn nơi can thiệp",
+        "5. Thời điểm và chậm tích lũy",
+        "6. Bằng chứng về nguyên nhân",
+        "7. Hành động và theo dõi"
+      ],
+      "visual_count": 51,
+      "embedded_model_sha256": "7d0c89bbde516f0ba1a7a8d5828412d197e7404366d374fa4b3e20218162550c",
+      "archive_integrity": "PASS",
+      "desktop_opened": true,
+      "native_dax_checks": 21,
+      "native_dax_status": "PASS",
+      "native_dax_result_file": "native_dax_results_vi.json",
+      "screenshots": [
+        "screenshots_vi/page_1.png",
+        "screenshots_vi/page_2.png",
+        "screenshots_vi/page_3.png",
+        "screenshots_vi/page_4.png",
+        "screenshots_vi/page_5.png",
+        "screenshots_vi/page_6.png",
+        "screenshots_vi/page_7.png"
+      ],
+      "pbix_sha256": "86cb0655924f5c36f9e30ebaae9a38fa9737ab5c23640a3bfc6fa958a9f9867b",
+      "written_report_sha256": "096e26ea4fdfff87d126da8e2371dbe3dd25208a47bdfab978ff5da0fc42ef6a",
+      "written_report_words": 6143,
+      "report_links_and_core_figures": "PASS"
+    },
+    {
+      "language": "en",
+      "file": "Aviation_Insights_en.pbix",
+      "pages": [
+        "1. Executive overview",
+        "2. Airline performance",
+        "3. Airports: volume and risk",
+        "4. Routes: intervention priorities",
+        "5. Timing and delay accumulation",
+        "6. Evidence on possible drivers",
+        "7. Actions and monitoring"
+      ],
+      "visual_count": 51,
+      "embedded_model_sha256": "7d0c89bbde516f0ba1a7a8d5828412d197e7404366d374fa4b3e20218162550c",
+      "archive_integrity": "PASS",
+      "desktop_opened": true,
+      "native_dax_checks": 21,
+      "native_dax_status": "PASS",
+      "native_dax_result_file": "native_dax_results_en.json",
+      "screenshots": [
+        "screenshots_en/page_1.png",
+        "screenshots_en/page_2.png",
+        "screenshots_en/page_3.png",
+        "screenshots_en/page_4.png",
+        "screenshots_en/page_5.png",
+        "screenshots_en/page_6.png",
+        "screenshots_en/page_7.png"
+      ],
+      "pbix_sha256": "94bfa4aabf674d30dfe5fe501a4a929edcf2e36aedf19edd726325190a8e4758",
+      "written_report_sha256": "cad3d105d55e67fa84f603ad25ea8f1738b9ad3ee62ad99b1fc34ee26fba8d4b",
+      "written_report_words": 4239,
+      "report_links_and_core_figures": "PASS"
+    }
+  ],
+  "desktop_engine_query_executed": true,
+  "native_pages_captured": 14,
+  "source_and_AGENTS_unchanged": true,
+  "scope": "Language-specific display labels/narratives and static recommendations; source identifiers and model data/formulas unchanged. Application menus and source cause-category terms retain application/source language. New statistical appendix remains in written reports."
+}

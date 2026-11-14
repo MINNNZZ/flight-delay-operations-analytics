@@ -1,0 +1,21 @@
+{
+  "source_rows": 5819079,
+  "cleaned_rows": 5819079,
+  "rows_removed": 0,
+  "raw_values_changed": 0,
+  "duplicates_before": 0,
+  "duplicates_after": 0,
+  "arrival_missing_before": 105071,
+  "arrival_missing_after": 105071,
+  "unresolved_airport_rows_preserved": 486165,
+  "unknown_dimension_keys_added": 1,
+  "time_issue_rows_flagged": 2,
+  "cancelled_preserved": 89884,
+  "diverted_preserved": 15187,
+  "extreme_arr_gt360_preserved": 6089,
+  "date_invalid_after": 0,
+  "day_coverage_after": 365,
+  "origin_fk_unmatched_after": 0,
+  "destination_fk_unmatched_after": 0,
+  "cause_minutes_equal_recorded_late_arrival_minutes": true
+}

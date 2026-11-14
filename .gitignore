@@ -1,0 +1,31 @@
+# Large local inputs and generated exports
+/flights.csv
+/airports.csv
+/airlines.csv
+/data/raw/
+/data/processed/*.gz
+*.pbix
+!powerbi/schema/desktop_empty_template.pbix
+
+# Local Power BI state and credentials
+**/.pbi/
+**/active_port.txt
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python / editor / local working files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.tools/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+/history/
+/resumes/

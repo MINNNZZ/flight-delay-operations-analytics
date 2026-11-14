@@ -1,0 +1,8 @@
+{
+  "strata": 5401,
+  "early_flights": 1791184,
+  "evening_flights": 1257762,
+  "weighted_mean_difference": 10.060468312216978,
+  "weighted_severe_rate_difference": 0.05262662821589128,
+  "strata_with_positive_mean_difference_share": 0.8226254397333828
+}

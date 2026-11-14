@@ -1,0 +1,130 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 896.4624254990015,
+            "y": 336.25316756284855
+          },
+          "nodeIndex": "Actions",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 662.4624254990015,
+            "y": 420.3338233274637
+          },
+          "nodeIndex": "DimAirline",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1180.4624254990015,
+            "y": 372.25316756284855
+          },
+          "nodeIndex": "DimCause",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 55.638682439522995,
+            "y": 570.6611833147656
+          },
+          "nodeIndex": "DimDate",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 261.49804776234475,
+            "y": -50
+          },
+          "nodeIndex": "DimDestination",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 248.19152241314282
+          },
+          "nodeIndex": "DimHour",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 405.80805184605066,
+            "y": 598.5063351256972
+          },
+          "nodeIndex": "DimOrigin",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 582.8809432184942,
+            "y": 94.08255383493349
+          },
+          "nodeIndex": "DimRoute",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 339.8161476729946,
+            "y": 248.26177369650543
+          },
+          "nodeIndex": "FactFlight",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

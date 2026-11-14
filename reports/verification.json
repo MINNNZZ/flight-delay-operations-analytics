@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "completed_date": "2026-11-12",
+  "source_and_AGENTS_hashes_unchanged": true,
+  "serialized_raw_columns_equal_to_source_all_rows": true,
+  "derived_date_status_eligibility_checks_all_rows": true,
+  "aggregate_conservation_checks": true,
+  "powerbi_engine_executed": false,
+  "totals": {
+    "rows": 5819079,
+    "COMPLETED": 5714008,
+    "ARR_ELIGIBLE": 5714008,
+    "ON_TIME": 4650569,
+    "SEVERE_60": 325591,
+    "CANCELLED": 89884,
+    "DIVERTED": 15187,
+    "DISRUPTED": 430662,
+    "POSITIVE_ARR_MINUTES": 69103367,
+    "GEO_ELIGIBLE": 5332914,
+    "TIME_ISSUE": 2
+  },
+  "reported_cause_minutes": 62651867,
+  "environment": {
+    "python": "3.13.7",
+    "pandas": "2.3.3",
+    "numpy": "2.3.3",
+    "matplotlib": "3.10.6"
+  }
+}

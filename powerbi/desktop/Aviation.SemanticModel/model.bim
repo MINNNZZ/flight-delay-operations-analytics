@@ -1,0 +1,1083 @@
+{
+  "compatibilityLevel": 1601,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"FactFlight\", \"DimAirline\", \"DimOrigin\", \"DimDestination\", \"DimDate\", \"DimHour\", \"DimRoute\", \"DimCause\", \"Actions\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "13406ac6018f544087e7",
+        "fromColumn": "AIRLINE",
+        "fromTable": "FactFlight",
+        "toColumn": "IATA_CODE",
+        "toTable": "DimAirline"
+      },
+      {
+        "name": "6d545a76c6115842bb2f",
+        "fromColumn": "ORIGIN_KEY",
+        "fromTable": "FactFlight",
+        "toColumn": "IATA_CODE",
+        "toTable": "DimOrigin"
+      },
+      {
+        "name": "aa6fe2d740445c02846c",
+        "fromColumn": "DESTINATION_KEY",
+        "fromTable": "FactFlight",
+        "toColumn": "IATA_CODE",
+        "toTable": "DimDestination"
+      },
+      {
+        "name": "457ed03b848e54b78f3f",
+        "fromColumn": "DATE",
+        "fromTable": "FactFlight",
+        "toColumn": "DATE",
+        "toTable": "DimDate"
+      },
+      {
+        "name": "c652d278006759cbac0f",
+        "fromColumn": "DEP_HOUR",
+        "fromTable": "FactFlight",
+        "toColumn": "DEP_HOUR",
+        "toTable": "DimHour"
+      },
+      {
+        "name": "aa5ab5b1652850e7ac54",
+        "fromColumn": "ROUTE",
+        "fromTable": "FactFlight",
+        "toColumn": "ROUTE",
+        "toTable": "DimRoute"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "FactFlight",
+        "columns": [
+          {
+            "name": "YEAR",
+            "dataType": "int64",
+            "lineageTag": "6cf0f59f-49fa-4675-aec2-3dc9160259c9",
+            "sourceColumn": "YEAR",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "MONTH",
+            "dataType": "int64",
+            "lineageTag": "c749e9ea-872d-4658-a59b-fe3408289b76",
+            "sourceColumn": "MONTH",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DAY",
+            "dataType": "int64",
+            "lineageTag": "a39efac7-8c5e-4f85-9431-9bc92041d284",
+            "sourceColumn": "DAY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DAY_OF_WEEK",
+            "dataType": "int64",
+            "lineageTag": "98370411-07ec-4862-9c65-a5ca4a2e450b",
+            "sourceColumn": "DAY_OF_WEEK",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AIRLINE",
+            "dataType": "string",
+            "lineageTag": "c951bffa-f90c-4e22-932c-2f3454e55666",
+            "sourceColumn": "AIRLINE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FLIGHT_NUMBER",
+            "dataType": "int64",
+            "lineageTag": "d0750a34-40b9-4826-b5b6-5d586ebf356d",
+            "sourceColumn": "FLIGHT_NUMBER",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TAIL_NUMBER",
+            "dataType": "string",
+            "lineageTag": "23c7811b-aa8c-431b-b607-0d4c2323fcaa",
+            "sourceColumn": "TAIL_NUMBER",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ORIGIN_AIRPORT",
+            "dataType": "string",
+            "lineageTag": "a82e0a5e-fcb1-401b-8fa1-8fb2eddadd29",
+            "sourceColumn": "ORIGIN_AIRPORT",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DESTINATION_AIRPORT",
+            "dataType": "string",
+            "lineageTag": "fa8b17bc-5507-4312-9567-86fe10c06f69",
+            "sourceColumn": "DESTINATION_AIRPORT",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SCHEDULED_DEPARTURE",
+            "dataType": "int64",
+            "lineageTag": "0f78fa11-add1-4ef6-a6d1-e89f2b0d972d",
+            "sourceColumn": "SCHEDULED_DEPARTURE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DEPARTURE_TIME",
+            "dataType": "int64",
+            "lineageTag": "cffc886f-72f1-495e-b303-1409e43c01f9",
+            "sourceColumn": "DEPARTURE_TIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DEPARTURE_DELAY",
+            "dataType": "int64",
+            "lineageTag": "d644e34c-abca-4585-8c1b-e3df457965ae",
+            "sourceColumn": "DEPARTURE_DELAY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TAXI_OUT",
+            "dataType": "int64",
+            "lineageTag": "0304731f-72b7-4e63-acb2-0881e486e1fb",
+            "sourceColumn": "TAXI_OUT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "WHEELS_OFF",
+            "dataType": "int64",
+            "lineageTag": "3b209a75-1b1b-497b-8e83-bc861eb7793f",
+            "sourceColumn": "WHEELS_OFF",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SCHEDULED_TIME",
+            "dataType": "int64",
+            "lineageTag": "15ed4abf-17e1-44bf-9471-3ee90ba169a2",
+            "sourceColumn": "SCHEDULED_TIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ELAPSED_TIME",
+            "dataType": "int64",
+            "lineageTag": "8566d9c3-c957-45c2-9940-07d2cf2e0d2e",
+            "sourceColumn": "ELAPSED_TIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AIR_TIME",
+            "dataType": "int64",
+            "lineageTag": "18642613-44f7-46ef-bb1c-a709309f7b3c",
+            "sourceColumn": "AIR_TIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DISTANCE",
+            "dataType": "int64",
+            "lineageTag": "82ab8ccb-edf2-454b-b929-b697b2fc9479",
+            "sourceColumn": "DISTANCE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "WHEELS_ON",
+            "dataType": "int64",
+            "lineageTag": "409d3e3c-1c49-44c2-8795-7f0674638487",
+            "sourceColumn": "WHEELS_ON",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TAXI_IN",
+            "dataType": "int64",
+            "lineageTag": "dc5c90db-0621-4e40-a3ce-3f4f57fab337",
+            "sourceColumn": "TAXI_IN",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SCHEDULED_ARRIVAL",
+            "dataType": "int64",
+            "lineageTag": "465aad2e-1a63-45de-b3cb-c9404b20280e",
+            "sourceColumn": "SCHEDULED_ARRIVAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ARRIVAL_TIME",
+            "dataType": "int64",
+            "lineageTag": "3aeaad13-ca3f-45b1-9326-a3eb6a4d2cfd",
+            "sourceColumn": "ARRIVAL_TIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ARRIVAL_DELAY",
+            "dataType": "int64",
+            "lineageTag": "1766cf90-a342-477d-8b4c-b60bfd6ac900",
+            "sourceColumn": "ARRIVAL_DELAY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DIVERTED",
+            "dataType": "int64",
+            "lineageTag": "35570209-8e5b-4be8-a094-37d4bc9d824b",
+            "sourceColumn": "DIVERTED",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CANCELLED",
+            "dataType": "int64",
+            "lineageTag": "25a74685-1461-4fcd-a1b8-42d370a366f8",
+            "sourceColumn": "CANCELLED",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CANCELLATION_REASON",
+            "dataType": "string",
+            "lineageTag": "15331982-c63d-4102-999f-b34c198a8399",
+            "sourceColumn": "CANCELLATION_REASON",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AIR_SYSTEM_DELAY",
+            "dataType": "int64",
+            "lineageTag": "33a7790b-bab5-4e82-8f44-6dff9de4b74f",
+            "sourceColumn": "AIR_SYSTEM_DELAY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SECURITY_DELAY",
+            "dataType": "int64",
+            "lineageTag": "0e1d6d3d-7ea7-43e0-a1ec-395efaf0f07a",
+            "sourceColumn": "SECURITY_DELAY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AIRLINE_DELAY",
+            "dataType": "int64",
+            "lineageTag": "867b6b99-20fa-44bf-b9a6-dd803775f242",
+            "sourceColumn": "AIRLINE_DELAY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "LATE_AIRCRAFT_DELAY",
+            "dataType": "int64",
+            "lineageTag": "17a1e219-63f7-4d53-9f60-602ba3bf9fa4",
+            "sourceColumn": "LATE_AIRCRAFT_DELAY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "WEATHER_DELAY",
+            "dataType": "int64",
+            "lineageTag": "f82b62dd-45e8-479e-a392-4eb15d44125b",
+            "sourceColumn": "WEATHER_DELAY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "FLIGHT_ID",
+            "dataType": "int64",
+            "lineageTag": "e14b0674-69a5-4fe8-ad75-8c6d85944bd4",
+            "sourceColumn": "FLIGHT_ID",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DATE",
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "db40db78-71b0-46ad-a991-a612d67cd2ac",
+            "sourceColumn": "DATE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DEP_HOUR",
+            "dataType": "int64",
+            "lineageTag": "b606c1fa-a05c-4703-9898-4d27488ff9c3",
+            "sourceColumn": "DEP_HOUR",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TIME_BAND",
+            "dataType": "string",
+            "lineageTag": "84bdbf95-6f84-4c6e-b3ed-82819be95def",
+            "sourceColumn": "TIME_BAND",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SEASON",
+            "dataType": "string",
+            "lineageTag": "bc71d8e2-074d-40bd-a4dd-9ae9ec775449",
+            "sourceColumn": "SEASON",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ORIGIN_KEY",
+            "dataType": "string",
+            "lineageTag": "b9a4b75d-319b-42be-9cb9-bd41ba950770",
+            "sourceColumn": "ORIGIN_KEY",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DESTINATION_KEY",
+            "dataType": "string",
+            "lineageTag": "d187d9fe-7f2f-4468-bc4e-713c84c4e335",
+            "sourceColumn": "DESTINATION_KEY",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GEO_ELIGIBLE",
+            "dataType": "int64",
+            "lineageTag": "eda4f4dd-0534-469c-bd26-d2cbc2c3d013",
+            "sourceColumn": "GEO_ELIGIBLE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ROUTE",
+            "dataType": "string",
+            "lineageTag": "30b244c1-9806-480e-b546-ccbe72c5df5d",
+            "sourceColumn": "ROUTE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COMPLETED",
+            "dataType": "int64",
+            "lineageTag": "660577fe-67fc-445a-8b36-4ba9e60bdc61",
+            "sourceColumn": "COMPLETED",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TIME_ISSUE",
+            "dataType": "int64",
+            "lineageTag": "5d00bce0-e66d-4ce4-8180-b53c7b079447",
+            "sourceColumn": "TIME_ISSUE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ARR_DELAY_ANALYSIS",
+            "dataType": "int64",
+            "lineageTag": "d04a3c7c-14a9-49b1-8008-5a18f24cfdd0",
+            "sourceColumn": "ARR_DELAY_ANALYSIS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DEP_DELAY_ANALYSIS",
+            "dataType": "int64",
+            "lineageTag": "55228cf5-7aa5-49d5-83b2-8896a2fe5a6f",
+            "sourceColumn": "DEP_DELAY_ANALYSIS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ARR_ELIGIBLE",
+            "dataType": "int64",
+            "lineageTag": "d5b57ab6-c082-467b-a67d-fa4e767550d6",
+            "sourceColumn": "ARR_ELIGIBLE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ON_TIME",
+            "dataType": "int64",
+            "lineageTag": "6fa3dca3-a8c2-4be1-b905-0b0fe447e297",
+            "sourceColumn": "ON_TIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DELAYED_15",
+            "dataType": "int64",
+            "lineageTag": "63f7707c-8f39-4d52-beeb-3d6210969ca8",
+            "sourceColumn": "DELAYED_15",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SEVERE_60",
+            "dataType": "int64",
+            "lineageTag": "751ac909-97c1-4a8e-9b07-1ccc0cceb6f2",
+            "sourceColumn": "SEVERE_60",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DISRUPTED",
+            "dataType": "int64",
+            "lineageTag": "779b861f-6af2-473b-b283-1cca1d001a57",
+            "sourceColumn": "DISRUPTED",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "POSITIVE_ARR_MINUTES",
+            "dataType": "int64",
+            "lineageTag": "efe20651-5a87-4dc2-a560-64e802c61d54",
+            "sourceColumn": "POSITIVE_ARR_MINUTES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CAUSE_REPORTED",
+            "dataType": "int64",
+            "lineageTag": "9d41afd2-b5ac-4bbd-90fb-260cb940a2d2",
+            "sourceColumn": "CAUSE_REPORTED",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "LATE_AIRCRAFT_POSITIVE",
+            "dataType": "int64",
+            "lineageTag": "3871ede0-e1cb-4aa8-9975-a4dc696c8736",
+            "sourceColumn": "LATE_AIRCRAFT_POSITIVE",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "6bcb872a-5a72-4945-8807-d31489cf5584",
+        "measures": [
+          {
+            "name": "Total Flights",
+            "expression": "COUNTROWS(FactFlight)",
+            "formatString": "#,0",
+            "lineageTag": "e6bbb93d-7a7a-408d-838f-ccc2433cb500"
+          },
+          {
+            "name": "Completed Flights",
+            "expression": "SUM(FactFlight[COMPLETED])",
+            "formatString": "#,0",
+            "lineageTag": "7d68bf3a-b3cc-4eb6-9035-7b54bab0edcf"
+          },
+          {
+            "name": "Arrival Eligible Flights",
+            "expression": "SUM(FactFlight[ARR_ELIGIBLE])",
+            "formatString": "#,0",
+            "lineageTag": "701f36c6-f25d-4f25-963d-0391d3820f7b"
+          },
+          {
+            "name": "Cancelled Flights",
+            "expression": "SUM(FactFlight[CANCELLED])",
+            "formatString": "#,0",
+            "lineageTag": "ae70ac55-59c1-4cbb-9511-ef77c0bb1c9b"
+          },
+          {
+            "name": "Diverted Flights",
+            "expression": "SUM(FactFlight[DIVERTED])",
+            "formatString": "#,0",
+            "lineageTag": "e711f024-f6b2-4106-9f3e-fb3d235dc3a4"
+          },
+          {
+            "name": "On-Time Flights",
+            "expression": "SUM(FactFlight[ON_TIME])",
+            "formatString": "#,0",
+            "lineageTag": "ea80b307-4506-4bc6-8276-5e6d98d867ff"
+          },
+          {
+            "name": "Severe Flights",
+            "expression": "SUM(FactFlight[SEVERE_60])",
+            "formatString": "#,0",
+            "lineageTag": "9aa5cd06-c153-46a2-b0b2-824bfc1e3c85"
+          },
+          {
+            "name": "Disrupted Flights",
+            "expression": "SUM(FactFlight[DISRUPTED])",
+            "formatString": "#,0",
+            "lineageTag": "7b3a4e9b-ba33-4012-a040-7ced6271acf8"
+          },
+          {
+            "name": "Cancellation Rate",
+            "expression": "DIVIDE([Cancelled Flights], [Total Flights])",
+            "formatString": "0.00%",
+            "lineageTag": "3b8a11e3-f6e4-418d-afe5-e0115d0d3848"
+          },
+          {
+            "name": "Diversion Rate",
+            "expression": "DIVIDE([Diverted Flights], [Total Flights])",
+            "formatString": "0.00%",
+            "lineageTag": "f0813fc6-d50c-411b-b40a-92521b3af9a4"
+          },
+          {
+            "name": "On-Time Rate",
+            "expression": "DIVIDE([On-Time Flights], [Arrival Eligible Flights])",
+            "formatString": "0.00%",
+            "lineageTag": "60a09585-b26f-49c6-b465-00322b7ff897"
+          },
+          {
+            "name": "On-Time Scheduled Rate",
+            "expression": "DIVIDE([On-Time Flights], [Total Flights])",
+            "formatString": "0.00%",
+            "lineageTag": "af602b0b-4cd2-4082-8650-cff61804d4d4"
+          },
+          {
+            "name": "Severe Delay Rate",
+            "expression": "DIVIDE([Severe Flights], [Arrival Eligible Flights])",
+            "formatString": "0.00%",
+            "lineageTag": "b9e0ff15-740c-4c72-a79b-c8f54bc3bb3e"
+          },
+          {
+            "name": "Disruption Rate",
+            "expression": "DIVIDE([Disrupted Flights], [Total Flights])",
+            "formatString": "0.00%",
+            "lineageTag": "cc66f316-ff29-4957-b048-48b96b7aa43e"
+          },
+          {
+            "name": "Average Arrival Delay",
+            "expression": "AVERAGE(FactFlight[ARR_DELAY_ANALYSIS])",
+            "formatString": "#,0.00",
+            "lineageTag": "0f7cbb83-d5d0-41d0-be65-44cb81e8e0c1"
+          },
+          {
+            "name": "Median Arrival Delay",
+            "expression": "MEDIAN(FactFlight[ARR_DELAY_ANALYSIS])",
+            "formatString": "#,0.00",
+            "lineageTag": "ede1e21a-a6dd-4cc9-8073-16c586c04767"
+          },
+          {
+            "name": "Average Departure Delay",
+            "expression": "AVERAGE(FactFlight[DEP_DELAY_ANALYSIS])",
+            "formatString": "#,0.00",
+            "lineageTag": "f8ceca89-fff1-4635-b081-9c24abbb83a7"
+          },
+          {
+            "name": "Median Departure Delay",
+            "expression": "MEDIAN(FactFlight[DEP_DELAY_ANALYSIS])",
+            "formatString": "#,0.00",
+            "lineageTag": "cb28b6d0-8a12-48e4-8783-ded7c17a6e7a"
+          },
+          {
+            "name": "P95 Arrival Delay",
+            "expression": [
+              "PERCENTILEX.INC(",
+              "    FILTER(FactFlight, FactFlight[ARR_ELIGIBLE] = 1),",
+              "    FactFlight[ARR_DELAY_ANALYSIS],",
+              "    0.95",
+              ")"
+            ],
+            "formatString": "#,0.00",
+            "lineageTag": "a6f2191f-a4fd-4369-abd4-cbe49131ec80"
+          },
+          {
+            "name": "Positive Arrival Minutes",
+            "expression": "SUM(FactFlight[POSITIVE_ARR_MINUTES])",
+            "formatString": "#,0",
+            "lineageTag": "03cd7538-344a-4ea8-88b1-445ab6b1cfd2"
+          },
+          {
+            "name": "Late Aircraft Minutes",
+            "expression": "SUM(FactFlight[LATE_AIRCRAFT_DELAY])",
+            "formatString": "#,0",
+            "lineageTag": "de7de1ac-c67a-4b8e-a8a7-c2156618d69d"
+          },
+          {
+            "name": "Airline Minutes",
+            "expression": "SUM(FactFlight[AIRLINE_DELAY])",
+            "formatString": "#,0",
+            "lineageTag": "7f4145b4-512f-41dd-9d4d-bf7477971fce"
+          },
+          {
+            "name": "NAS Minutes",
+            "expression": "SUM(FactFlight[AIR_SYSTEM_DELAY])",
+            "formatString": "#,0",
+            "lineageTag": "cd26fdbc-62c3-4546-9da8-ff418f76d9aa"
+          },
+          {
+            "name": "Weather Minutes",
+            "expression": "SUM(FactFlight[WEATHER_DELAY])",
+            "formatString": "#,0",
+            "lineageTag": "40e88d99-f420-4640-9991-6f8a41b259f0"
+          },
+          {
+            "name": "Security Minutes",
+            "expression": "SUM(FactFlight[SECURITY_DELAY])",
+            "formatString": "#,0",
+            "lineageTag": "d52fe78e-aac4-4c22-ba58-298ab1853478"
+          },
+          {
+            "name": "Reported Cause Minutes",
+            "expression": "[Late Aircraft Minutes] + [Airline Minutes] + [NAS Minutes] + [Weather Minutes] + [Security Minutes]",
+            "formatString": "#,0",
+            "lineageTag": "7374f22b-7470-4ca8-9da2-200f4995067d"
+          },
+          {
+            "name": "Late Aircraft Share of Reported Minutes",
+            "expression": "DIVIDE([Late Aircraft Minutes], [Reported Cause Minutes])",
+            "formatString": "0.00%",
+            "lineageTag": "2fa921f0-2e34-4502-b3a7-48de1cd7177e"
+          },
+          {
+            "name": "Cause Reported Flights",
+            "expression": "SUM(FactFlight[CAUSE_REPORTED])",
+            "formatString": "#,0",
+            "lineageTag": "2805b232-dcd4-48cf-b2d7-69e06c86f9cb"
+          },
+          {
+            "name": "Geographically Resolved Flights",
+            "expression": "CALCULATE([Total Flights], KEEPFILTERS(FactFlight[GEO_ELIGIBLE] = 1))",
+            "formatString": "#,0",
+            "lineageTag": "33acd565-8516-434e-9516-f41b75cba4d8"
+          },
+          {
+            "name": "Geographic Coverage",
+            "expression": "DIVIDE([Geographically Resolved Flights], [Total Flights])",
+            "formatString": "0.00%",
+            "lineageTag": "50c0112c-61fd-4e21-9314-b15bd14f64fe"
+          },
+          {
+            "name": "Time Issue Flights",
+            "expression": "SUM(FactFlight[TIME_ISSUE])",
+            "formatString": "#,0",
+            "lineageTag": "e8a7251b-c4e4-4db2-8e62-ed08f3e5cebe"
+          },
+          {
+            "name": "Airport Rate With Sample Threshold",
+            "expression": "IF([Total Flights] >= 10000, [Severe Delay Rate])",
+            "formatString": "0.00%",
+            "lineageTag": "546841aa-cc57-414c-ac17-787353f05886"
+          },
+          {
+            "name": "Route Rate With Sample Threshold",
+            "expression": "IF([Total Flights] >= 1000, [Severe Delay Rate])",
+            "formatString": "0.00%",
+            "lineageTag": "0c6a1751-90f1-413a-976f-73d5ec9274a9"
+          },
+          {
+            "name": "Data Scope Label",
+            "expression": "\"Historical 2015 | Airport/route pages exclude October | Severe: arrival >=60 minutes\"",
+            "lineageTag": "4555c1a7-0a15-4533-9743-7964ca027728"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactFlight",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(Binary.Decompress(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\data\\processed\\flights_cleaned.csv.gz\"), Compression.GZip), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"YEAR\", Int64.Type}, {\"MONTH\", Int64.Type}, {\"DAY\", Int64.Type}, {\"DAY_OF_WEEK\", Int64.Type}, {\"AIRLINE\", type text}, {\"FLIGHT_NUMBER\", Int64.Type}, {\"TAIL_NUMBER\", type text}, {\"ORIGIN_AIRPORT\", type text}, {\"DESTINATION_AIRPORT\", type text}, {\"SCHEDULED_DEPARTURE\", Int64.Type}, {\"DEPARTURE_TIME\", Int64.Type}, {\"DEPARTURE_DELAY\", Int64.Type}, {\"TAXI_OUT\", Int64.Type}, {\"WHEELS_OFF\", Int64.Type}, {\"SCHEDULED_TIME\", Int64.Type}, {\"ELAPSED_TIME\", Int64.Type}, {\"AIR_TIME\", Int64.Type}, {\"DISTANCE\", Int64.Type}, {\"WHEELS_ON\", Int64.Type}, {\"TAXI_IN\", Int64.Type}, {\"SCHEDULED_ARRIVAL\", Int64.Type}, {\"ARRIVAL_TIME\", Int64.Type}, {\"ARRIVAL_DELAY\", Int64.Type}, {\"DIVERTED\", Int64.Type}, {\"CANCELLED\", Int64.Type}, {\"CANCELLATION_REASON\", type text}, {\"AIR_SYSTEM_DELAY\", Int64.Type}, {\"SECURITY_DELAY\", Int64.Type}, {\"AIRLINE_DELAY\", Int64.Type}, {\"LATE_AIRCRAFT_DELAY\", Int64.Type}, {\"WEATHER_DELAY\", Int64.Type}, {\"FLIGHT_ID\", Int64.Type}, {\"DATE\", type date}, {\"DEP_HOUR\", Int64.Type}, {\"TIME_BAND\", type text}, {\"SEASON\", type text}, {\"ORIGIN_KEY\", type text}, {\"DESTINATION_KEY\", type text}, {\"GEO_ELIGIBLE\", Int64.Type}, {\"ROUTE\", type text}, {\"COMPLETED\", Int64.Type}, {\"TIME_ISSUE\", Int64.Type}, {\"ARR_DELAY_ANALYSIS\", Int64.Type}, {\"DEP_DELAY_ANALYSIS\", Int64.Type}, {\"ARR_ELIGIBLE\", Int64.Type}, {\"ON_TIME\", Int64.Type}, {\"DELAYED_15\", Int64.Type}, {\"SEVERE_60\", Int64.Type}, {\"DISRUPTED\", Int64.Type}, {\"POSITIVE_ARR_MINUTES\", Int64.Type}, {\"CAUSE_REPORTED\", Int64.Type}, {\"LATE_AIRCRAFT_POSITIVE\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimAirline",
+        "columns": [
+          {
+            "name": "IATA_CODE",
+            "dataType": "string",
+            "lineageTag": "494bddcd-4e06-48e1-ab86-8e196a21211f",
+            "sourceColumn": "IATA_CODE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AIRLINE",
+            "dataType": "string",
+            "lineageTag": "093f4001-3131-489b-925f-1d9e28ee4581",
+            "sourceColumn": "AIRLINE",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "f0975792-c336-496d-83dc-c3a3e3e69092",
+        "partitions": [
+          {
+            "name": "DimAirline",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\data\\processed\\dim_airline.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"IATA_CODE\", type text}, {\"AIRLINE\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimOrigin",
+        "columns": [
+          {
+            "name": "IATA_CODE",
+            "dataType": "string",
+            "lineageTag": "66aa4423-bb3e-43c0-a2b5-6c5eb7aec68c",
+            "sourceColumn": "IATA_CODE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AIRPORT",
+            "dataType": "string",
+            "lineageTag": "27280eb6-44a0-4a0c-8cb6-fdb78113550b",
+            "sourceColumn": "AIRPORT",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CITY",
+            "dataType": "string",
+            "lineageTag": "006fd766-eecf-4ff7-a9de-bd5151ecc259",
+            "sourceColumn": "CITY",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "STATE",
+            "dataType": "string",
+            "lineageTag": "01b29d00-6d32-43b8-a901-016286c1cf7b",
+            "sourceColumn": "STATE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COUNTRY",
+            "dataType": "string",
+            "lineageTag": "d06dc1ed-3b9d-416f-8b44-ebd3dc9a67c1",
+            "sourceColumn": "COUNTRY",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LATITUDE",
+            "dataType": "double",
+            "lineageTag": "bda6b950-a4c8-4f1e-8ccd-64ff14fdc9b5",
+            "sourceColumn": "LATITUDE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "LONGITUDE",
+            "dataType": "double",
+            "lineageTag": "8ce16099-1e8b-41ee-bb6f-b72784892807",
+            "sourceColumn": "LONGITUDE",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "296bac33-2a55-48dc-ba7d-e157537be891",
+        "partitions": [
+          {
+            "name": "DimOrigin",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\data\\processed\\dim_airport.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"IATA_CODE\", type text}, {\"AIRPORT\", type text}, {\"CITY\", type text}, {\"STATE\", type text}, {\"COUNTRY\", type text}, {\"LATITUDE\", type number}, {\"LONGITUDE\", type number}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimDestination",
+        "columns": [
+          {
+            "name": "IATA_CODE",
+            "dataType": "string",
+            "lineageTag": "0180537e-8624-486e-a94a-d20d6dc8e36b",
+            "sourceColumn": "IATA_CODE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AIRPORT",
+            "dataType": "string",
+            "lineageTag": "e6ae6514-ba5d-4bbf-8a09-0019557e5f5d",
+            "sourceColumn": "AIRPORT",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CITY",
+            "dataType": "string",
+            "lineageTag": "e9ba8975-8585-4a7d-84b9-b9450008b3c2",
+            "sourceColumn": "CITY",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "STATE",
+            "dataType": "string",
+            "lineageTag": "5b690206-0749-49ac-b2db-710ede4681a2",
+            "sourceColumn": "STATE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COUNTRY",
+            "dataType": "string",
+            "lineageTag": "ae67f65c-9b7b-4917-9294-4d60056860ba",
+            "sourceColumn": "COUNTRY",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LATITUDE",
+            "dataType": "double",
+            "lineageTag": "cee03d12-4e29-4c4e-8754-41e3f5079d8a",
+            "sourceColumn": "LATITUDE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "LONGITUDE",
+            "dataType": "double",
+            "lineageTag": "197be29d-3530-40a3-8ea8-23951921d299",
+            "sourceColumn": "LONGITUDE",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "96f2cd78-ef73-4446-b443-d70502fd043f",
+        "partitions": [
+          {
+            "name": "DimDestination",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\data\\processed\\dim_airport.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"IATA_CODE\", type text}, {\"AIRPORT\", type text}, {\"CITY\", type text}, {\"STATE\", type text}, {\"COUNTRY\", type text}, {\"LATITUDE\", type number}, {\"LONGITUDE\", type number}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimDate",
+        "columns": [
+          {
+            "name": "DATE",
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "35bda62c-fcdd-4d8a-9c73-261c11501981",
+            "sourceColumn": "DATE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "YEAR",
+            "dataType": "int64",
+            "lineageTag": "03f500e8-45b1-4ec2-9393-b968f534e51c",
+            "sourceColumn": "YEAR",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "MONTH",
+            "dataType": "int64",
+            "lineageTag": "59f06ac0-46bd-42a4-8c07-25dd0e391e06",
+            "sourceColumn": "MONTH",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DAY_OF_WEEK",
+            "dataType": "int64",
+            "lineageTag": "3ebd4aa2-f0fc-49fc-ac8f-df7ee0ceaf39",
+            "sourceColumn": "DAY_OF_WEEK",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "5ce7bf4d-b4f3-4e2c-b655-33d9f99b01bd",
+        "partitions": [
+          {
+            "name": "DimDate",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\data\\processed\\dim_date.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"DATE\", type date}, {\"YEAR\", Int64.Type}, {\"MONTH\", Int64.Type}, {\"DAY_OF_WEEK\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimHour",
+        "columns": [
+          {
+            "name": "DEP_HOUR",
+            "dataType": "int64",
+            "lineageTag": "571ac316-4a12-4d94-b891-f8450cdc7bd5",
+            "sourceColumn": "DEP_HOUR",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "9922a818-4a08-4e42-8e1e-03dc6740db85",
+        "partitions": [
+          {
+            "name": "DimHour",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\data\\processed\\dim_hour.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"DEP_HOUR\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimRoute",
+        "columns": [
+          {
+            "name": "ROUTE",
+            "dataType": "string",
+            "lineageTag": "e7eb7eb0-8954-4842-ab05-660288d0a92b",
+            "sourceColumn": "ROUTE",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b46436d9-35e6-440c-b671-e9a7e1050c41",
+        "partitions": [
+          {
+            "name": "DimRoute",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\powerbi\\desktop\\DimRoute.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"ROUTE\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimCause",
+        "columns": [
+          {
+            "name": "Cause",
+            "dataType": "string",
+            "lineageTag": "1c437b8c-7a09-4432-94fc-dbf8723bf01e",
+            "sourceColumn": "Cause",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sort",
+            "dataType": "int64",
+            "lineageTag": "0ab1df3f-ea0a-4ca3-a059-6ddc5bb87162",
+            "sourceColumn": "Sort",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "b2abdec6-a756-48f2-a2cd-61227ff48ac8",
+        "measures": [
+          {
+            "name": "Cause Minutes",
+            "expression": "SWITCH(SELECTEDVALUE(DimCause[Cause]), \"Late aircraft\", [Late Aircraft Minutes], \"Airline\", [Airline Minutes], \"NAS\", [NAS Minutes], \"Weather\", [Weather Minutes], \"Security\", [Security Minutes])",
+            "formatString": "#,0",
+            "lineageTag": "d4d4251d-4694-4fe4-a580-e5e264a22de8"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCause",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\powerbi\\desktop\\DimCause.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"Cause\", type text}, {\"Sort\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Actions",
+        "columns": [
+          {
+            "name": "Ưu tiên",
+            "dataType": "string",
+            "lineageTag": "73b3dd9f-2f6d-4ac2-abec-33e54d4f5d25",
+            "sourceColumn": "Ưu tiên",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hành động",
+            "dataType": "string",
+            "lineageTag": "148ec9ce-a4ee-4c1e-b138-0f0822617e38",
+            "sourceColumn": "Hành động",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Phụ trách đề xuất",
+            "dataType": "string",
+            "lineageTag": "4c85b8a7-5915-4f22-8266-5a835db69869",
+            "sourceColumn": "Phụ trách đề xuất",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Bằng chứng",
+            "dataType": "string",
+            "lineageTag": "b662bb20-4c81-4317-b741-b6cfd979ce6c",
+            "sourceColumn": "Bằng chứng",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Đo thành công",
+            "dataType": "string",
+            "lineageTag": "e597819a-47be-4c12-8d40-bf51970a1ea0",
+            "sourceColumn": "Đo thành công",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Trạng thái",
+            "dataType": "string",
+            "lineageTag": "e97496a1-0378-41aa-a1ee-d1f22a19a9b9",
+            "sourceColumn": "Trạng thái",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e1cad757-6194-4e9b-99c9-5cd493bddd40",
+        "partitions": [
+          {
+            "name": "Actions",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\path\\to\\flight-delay-operations-analytics\\powerbi\\desktop\\Actions.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Nulls = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(Nulls, {{\"Ưu tiên\", type text}, {\"Hành động\", type text}, {\"Phụ trách đề xuất\", type text}, {\"Bằng chứng\", type text}, {\"Đo thành công\", type text}, {\"Trạng thái\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

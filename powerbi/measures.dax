@@ -1,0 +1,78 @@
+// Create each measure separately in Power BI. Rates: percentage, 2 decimals.
+// FactFlight is imported from data/processed/flights_cleaned.csv.gz.
+
+Total Flights = COUNTROWS(FactFlight)
+
+Completed Flights = SUM(FactFlight[COMPLETED])
+
+Arrival Eligible Flights = SUM(FactFlight[ARR_ELIGIBLE])
+
+Cancelled Flights = SUM(FactFlight[CANCELLED])
+
+Diverted Flights = SUM(FactFlight[DIVERTED])
+
+On-Time Flights = SUM(FactFlight[ON_TIME])
+
+Severe Flights = SUM(FactFlight[SEVERE_60])
+
+Disrupted Flights = SUM(FactFlight[DISRUPTED])
+
+Cancellation Rate = DIVIDE([Cancelled Flights], [Total Flights])
+
+Diversion Rate = DIVIDE([Diverted Flights], [Total Flights])
+
+On-Time Rate = DIVIDE([On-Time Flights], [Arrival Eligible Flights])
+
+On-Time Scheduled Rate = DIVIDE([On-Time Flights], [Total Flights])
+
+Severe Delay Rate = DIVIDE([Severe Flights], [Arrival Eligible Flights])
+
+Disruption Rate = DIVIDE([Disrupted Flights], [Total Flights])
+
+Average Arrival Delay = AVERAGE(FactFlight[ARR_DELAY_ANALYSIS])
+
+Median Arrival Delay = MEDIAN(FactFlight[ARR_DELAY_ANALYSIS])
+
+Average Departure Delay = AVERAGE(FactFlight[DEP_DELAY_ANALYSIS])
+
+Median Departure Delay = MEDIAN(FactFlight[DEP_DELAY_ANALYSIS])
+
+P95 Arrival Delay =
+PERCENTILEX.INC(
+    FILTER(FactFlight, FactFlight[ARR_ELIGIBLE] = 1),
+    FactFlight[ARR_DELAY_ANALYSIS],
+    0.95
+)
+
+Positive Arrival Minutes = SUM(FactFlight[POSITIVE_ARR_MINUTES])
+
+Late Aircraft Minutes = SUM(FactFlight[LATE_AIRCRAFT_DELAY])
+
+Airline Minutes = SUM(FactFlight[AIRLINE_DELAY])
+
+NAS Minutes = SUM(FactFlight[AIR_SYSTEM_DELAY])
+
+Weather Minutes = SUM(FactFlight[WEATHER_DELAY])
+
+Security Minutes = SUM(FactFlight[SECURITY_DELAY])
+
+Reported Cause Minutes =
+[Late Aircraft Minutes] + [Airline Minutes] + [NAS Minutes] + [Weather Minutes] + [Security Minutes]
+
+Late Aircraft Share of Reported Minutes = DIVIDE([Late Aircraft Minutes], [Reported Cause Minutes])
+
+Cause Reported Flights = SUM(FactFlight[CAUSE_REPORTED])
+
+Geographically Resolved Flights =
+CALCULATE([Total Flights], KEEPFILTERS(FactFlight[GEO_ELIGIBLE] = 1))
+
+Geographic Coverage = DIVIDE([Geographically Resolved Flights], [Total Flights])
+
+Time Issue Flights = SUM(FactFlight[TIME_ISSUE])
+
+Airport Rate With Sample Threshold = IF([Total Flights] >= 10000, [Severe Delay Rate])
+
+Route Rate With Sample Threshold = IF([Total Flights] >= 1000, [Severe Delay Rate])
+
+Data Scope Label =
+"Historical 2015 | Airport/route pages exclude October | Severe: arrival >=60 minutes"

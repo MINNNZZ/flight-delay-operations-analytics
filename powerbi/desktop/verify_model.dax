@@ -1,0 +1,24 @@
+EVALUATE
+ROW(
+    "Total Flights", [Total Flights],
+    "Completed Flights", [Completed Flights],
+    "Severe Flights", [Severe Flights],
+    "Cancelled Flights", [Cancelled Flights],
+    "Diverted Flights", [Diverted Flights],
+    "Disrupted Flights", [Disrupted Flights],
+    "On-Time Flights", [On-Time Flights],
+    "Severe Delay Rate", [Severe Delay Rate],
+    "Cancellation Rate", [Cancellation Rate],
+    "On-Time Scheduled Rate", [On-Time Scheduled Rate],
+    "Average Arrival Delay", [Average Arrival Delay],
+    "Median Arrival Delay", [Median Arrival Delay],
+    "P95 Arrival Delay", [P95 Arrival Delay],
+    "Positive Arrival Minutes", [Positive Arrival Minutes],
+    "Reported Cause Minutes", [Reported Cause Minutes],
+    "Geographically Resolved Flights", [Geographically Resolved Flights],
+    "October Flights", CALCULATE([Total Flights], DimDate[MONTH] = 10),
+    "October Resolved Flights", CALCULATE([Geographically Resolved Flights], DimDate[MONTH] = 10),
+    "Airline Dimension Rows", COUNTROWS(DimAirline),
+    "Airport Dimension Rows", COUNTROWS(DimOrigin),
+    "Date Dimension Rows", COUNTROWS(DimDate)
+)

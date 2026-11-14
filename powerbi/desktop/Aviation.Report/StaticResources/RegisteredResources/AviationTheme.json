@@ -1,0 +1,27 @@
+{
+  "name": "Aviation Consulting",
+  "dataColors": [
+    "#167D93",
+    "#C75C3B",
+    "#DAAE55",
+    "#6573A6",
+    "#4B9987"
+  ],
+  "background": "#F4F6FA",
+  "foreground": "#182B43",
+  "tableAccent": "#167D93",
+  "textClasses": {
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 13
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 28
+    }
+  }
+}

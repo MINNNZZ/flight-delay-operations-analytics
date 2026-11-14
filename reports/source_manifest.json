@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "AGENTS.md": "bf6ddb292ef5086797c38ee6fda59f39f5676286446449cf047f4bfbdfff4d05",
+    "flights.csv": "afa4e42188b113dd69427a3fbd00a4b6979c6235c866f963c2899d18a3403a83",
+    "airports.csv": "23c4cea98c318225bd923b2068ead8af089845071f79fd9ea0037ba6a61cd4e2",
+    "airlines.csv": "ec54f453260c2a46fc76d497ab0eb0a4c13724b566fba8a7ce3bb8ad712acca3"
+  },
+  "profile_run_id": "61e158f7-9d41-4b09-87f1-c7693ceb64c7",
+  "profile_started_at_utc": "2026-11-12T20:07:43.575832+00:00",
+  "source_files": {
+    "airlines.csv": 359,
+    "airports.csv": 23867,
+    "flights.csv": 592406591
+  }
+}
