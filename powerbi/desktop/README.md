@@ -1,3 +1,5 @@
+> Public release: the embedded PBIX files are not attached. Review screenshots_en/ and screenshots_vi/ plus source definitions. See [distribution status](../../docs/PBIX_DISTRIBUTION.md).
+
 # Báo cáo Power BI Desktop
 
 Mở [Aviation_Insights.pbix](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/tag/v1.0.0) bằng Power BI Desktop: báo cáo có nhúng dữ liệu, 7 trang và biểu đồ native. Đã mở lại chính bản `.pbix` và đối soát 21 chỉ tiêu DAX: **PASS**. Xem [kết quả kiểm định](desktop_verification.json). Tệp khoảng 234 MB; không cần refresh để xem dữ liệu đã nhúng.

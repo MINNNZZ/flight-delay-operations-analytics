@@ -22,10 +22,10 @@ The evening/morning risk ratio is observational, not a benefit from an intervent
 
 ## Read the reports / Đọc báo cáo
 
-| Language | Client report | Power BI download |
+| Language | Client report | Power BI previews |
 | --- | --- | --- |
-| English | [Full client report](reports/final_analysis_report_en.md) | [English PBIX](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/download/v1.0.0/Aviation_Insights_en.pbix) |
-| Tiếng Việt | [Báo cáo khách hàng](reports/final_analysis_report_vi.md) | [Vietnamese PBIX](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/download/v1.0.0/Aviation_Insights_vi.pbix) |
+| English | [Full client report](reports/final_analysis_report_en.md) | [View English pages](powerbi/desktop/screenshots_en) |
+| Tiếng Việt | [Báo cáo khách hàng](reports/final_analysis_report_vi.md) | [Vietnamese PBIX](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/tag/v1.0.0) |
 
 [Detailed Vietnamese insights](reports/bao_cao_insight_chi_tiet.md) · [Data quality](reports/data_quality_report.md) · [Robustness review](reports/skill_review/analysis_improvement_review.md) · [Tiếng Việt: giới thiệu dự án](README_vi.md)
 
@@ -51,7 +51,9 @@ The aviation investigation uses descriptive/diagnostic statistics, **not a machi
 
 [View all English pages](powerbi/desktop/screenshots_en) · [Xem các trang tiếng Việt](powerbi/desktop/screenshots_vi)
 
-PBIX assets contain the embedded model, so they can be viewed without a source refresh. Before refreshing, change local file paths to your machine. Menus follow your Desktop settings; technical identifiers and source cause-category terms are retained. Top airport/route lists are fixed from the baseline, not dynamically re-ranked. Bootstrap intervals and carrier sensitivity tables remain in the written reports rather than additional Desktop visuals.
+**PBIX binaries are not currently published.** They contain embedded flight records and remain local pending confirmation of data redistribution rights and approval to publish those records. Report/model definitions, DAX, Power Query and screenshots are available in this repository. See [distribution status](docs/PBIX_DISTRIBUTION.md).
+
+The locally validated PBIX files contain the embedded model and can be viewed without a source refresh. Before refreshing, change local file paths to your machine. Menus follow your Desktop settings; technical identifiers and source cause-category terms are retained. Top airport/route lists are fixed from the baseline, not dynamically re-ranked. Bootstrap intervals and carrier sensitivity tables remain in the written reports rather than additional Desktop visuals.
 
 ## Repository layout
 
@@ -101,7 +103,7 @@ The full export/readback needs several GB of RAM, disk space and time. No API ke
 
 ## Data provenance and AI assistance
 
-The original CSV files were provided locally. Their original download provenance and redistribution terms were **not independently established**. Large raw and cleaned CSVs are excluded from normal Git objects; the PBIX release assets **do contain embedded flight records**. Expected source hashes and schema requirements are documented in [data setup](docs/DATA_SETUP.md). This repository does not assert that similarly named files downloaded elsewhere are byte-identical or grant a license to third-party data.
+The original CSV files were provided locally. Their original download provenance and redistribution terms were **not independently established**. Large raw and cleaned CSVs are excluded from normal Git objects; the locally retained PBIX files **do contain embedded flight records**, which are not being uploaded in this source-only release. Expected source hashes and schema requirements are documented in [data setup](docs/DATA_SETUP.md). This repository does not assert that similarly named files downloaded elsewhere are byte-identical or grant a license to third-party data.
 
 This is an **AI-assisted portfolio project**. AI tools supported code generation, analysis iteration, reporting, localization and Desktop automation. Computed results were checked against the source files and native Power BI engine; AI-generated explanations were constrained by data coverage and evidence. It is not presented as a deployed production system or an operational intervention with measured savings.
 

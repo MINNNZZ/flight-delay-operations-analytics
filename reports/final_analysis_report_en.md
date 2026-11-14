@@ -1,5 +1,7 @@
 # Flight Delays and Cancellations — Client Report
 
+**Publication note:** the locally validated PBIX binaries are not included in this source-only release. Screenshots and report/model definitions are available; see [distribution status](../docs/PBIX_DISTRIBUTION.md). References below to provided PBIX files describe the local project deliverables.
+
 Language: English. Analysis period: **January–December 2015**. This report describes historical operations, not current airline performance. It uses the same sources, KPI definitions and conclusions as the [Vietnamese edition](final_analysis_report_vi.md). Airline names and codes follow the supplied historical lookup.
 
 ## Executive Summary
@@ -218,7 +220,7 @@ Do not increase schedule buffers network-wide before testing utilization trade-o
 
 ## Power BI Story
 
-Two language-specific files are provided: [English Power BI](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/download/v1.0.0/Aviation_Insights_en.pbix) and [Vietnamese Power BI](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/download/v1.0.0/Aviation_Insights_vi.pbix). Both contain the same embedded model and seven pages; DAX formulas and technical field identifiers remain unchanged. Visible titles, narrative text, recommendation content and display labels are localized. The desktop application's menus follow its own language setting.
+Two language-specific files are provided: [English Power BI](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/tag/v1.0.0) and [Vietnamese Power BI](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/tag/v1.0.0). Both contain the same embedded model and seven pages; DAX formulas and technical field identifiers remain unchanged. Visible titles, narrative text, recommendation content and display labels are localized. The desktop application's menus follow its own language setting.
 
 | Page | Main question and visual story | Management decision |
 | --- | --- | --- |

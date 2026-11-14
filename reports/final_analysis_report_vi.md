@@ -1,3 +1,5 @@
+> Publication status: PBIX binaries remain local; this public copy includes screenshots and model/report definitions. See [distribution status](../docs/PBIX_DISTRIBUTION.md).
+
 # Phạm vi và giả định
 
 Tên dự án flight delays and cancellations project. Yêu cầu để trống câu hỏi kinh doanh; tiếp tục điều tra chậm chuyến và độ tin cậy trên dữ liệu hiện có. Đã chạy lại profiling, làm sạch, phân tích nhiều chiều và kiểm định toàn bộ bản xuất. Không sửa AGENTS.md. Không có context hoặc skill aviation-data-analysis riêng khi kiểm tra. Power BI là bản sao kiểm định trước đó; lượt này không refresh Desktop. Kiểm chứng bổ sung nằm trong báo cáo chữ.
@@ -309,8 +311,8 @@ Bài học cho analyst: phân biệt tác động chọn tập chuyến, chuẩn
 
 ## Power BI theo ngôn ngữ
 
-- [Bản tiếng Việt](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/download/v1.0.0/Aviation_Insights_vi.pbix).
-- [Bản tiếng Anh](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/download/v1.0.0/Aviation_Insights_en.pbix).
+- [Bản tiếng Việt](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/tag/v1.0.0).
+- [Bản tiếng Anh](https://github.com/MINNNZZ/flight-delay-operations-analytics/releases/tag/v1.0.0).
 
 Hai bản có cùng dữ liệu và mô hình nhúng, 7 trang và 51 thành phần trực quan; công thức DAX và mã kỹ thuật giữ nguyên. Trang hành động dùng nội dung tĩnh tương đương ở hai ngôn ngữ. Nhãn nguyên nhân trong dữ liệu có thể giữ thuật ngữ nguồn; ngôn ngữ menu Desktop theo cài đặt ứng dụng. Các bảng độ nhạy và khoảng ổn định mới nằm trong báo cáo chữ, chưa thành visual bổ sung. Trạng thái kiểm định riêng của hai bản nằm trong [localization_verification.json](../powerbi/desktop/localization_verification.json); đối soát Desktop trước đó thuộc bản gốc.
 

@@ -4,7 +4,7 @@
   "python_sources_compile": true,
   "local_markdown_links_resolve": true,
   "privacy_scan": "No resume/contact details, credential patterns or private user paths in published text files",
-  "large_files": "No normal Git object above 20 MiB; PBIX binaries are release assets",
+  "large_files": "No normal Git object above 20 MiB. PBIX binaries retained locally pending explicit embedded-data distribution approval.",
   "files_before_manifest": 233,
   "original_project_untouched": true
 }
